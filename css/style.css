@@ -1,0 +1,540 @@
+
+/* ------------------------------------ Reseteamos los valores por Default del Navegador ----------------------------- */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+:root{
+    --clr-fondo: blueviolet;
+    --clr-font: whitesmoke;
+    --clr-card-back: #203239;
+}
+
+
+
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+
+.header{
+
+    
+    background-color: var(--clr-fondo);
+    color: var(--clr-font);
+}
+
+.header-h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px 0 0 10px ;
+    vertical-align:sub;
+   
+}
+
+
+.header-img img{
+
+    width: 100px;
+    margin: 10px;
+}
+
+.header-img{
+
+    display: inline-block; 
+    width: 100px;
+}
+
+a{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: var(--clr-font);
+    padding: 5px;
+}
+
+.header-main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.menu{
+    
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;     
+} 
+
+.navbar{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.header-boton-buscador{
+
+    
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-buscador input{
+
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 255px;
+}
+
+.header-boton-buscador button{
+
+    border-radius: 20px;
+    padding: 5px;
+    width: 85px;  
+}
+
+.menu a:hover{
+
+    background: rgba(54, 52, 52, 0.305);
+}    
+
+.navbar h3{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 35px;
+    margin: 5px;   
+}
+
+/* ------------------------------------------------ Main ------------------------------------------------------------- */
+
+.main{
+    background-color: #203239;
+    border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   /*  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "vh th"
+    "hr em";
+    */
+}
+
+.card-Vehículos{
+    grid-area: vh;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.card-Vehículos h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Vehículos p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-Tecnología{
+    grid-area: th;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card-Tecnología h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Tecnología p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-Herramientas{
+    grid-area: hr;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Herramientas h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Herramientas p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-Electrodomésticos{
+    grid-area: em;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Electrodomésticos h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Electrodomésticos p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-i{
+
+    border: solid red 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "1 2 3"
+    "4 5 6";
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main img{
+    margin: 5px;
+    padding: 5px;
+}
+
+/* ------------------------------------------------- Mapa ------------------------------------------------------------- */
+
+.card-contact{
+    color: var(--clr-font);  
+    background-color: var(--clr-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-contact h3{
+
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.map{
+    width: 98vw;
+    margin: 5px;   
+}
+
+/* ------------------------------------------------ Footer ---------------------------------------------------------- */
+
+.footer{
+
+    
+    background-color: var(--clr-card-back);
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "ft ft ft"
+    "fs1 fs2 fs3"
+    "fp fp fp";
+}
+
+.footer__titulo{
+    grid-area: ft;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer__sec-1{
+    grid-area: fs1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__sec-1 li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.footer__sec-2{
+    grid-area: fs2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.footer__sec-3{
+    grid-area: fs3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__sec-3 li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__pie{
+    border: solid 5px var(--clr-fondo);
+    grid-area: fp;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: 5px;
+}
+
+.footer h4{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--clr-font);
+}
+
+.footer p{
+    color: var(--clr-font);
+}
+
+/* ------------------------------------ Media Querie 420px ----------------------------------------------------------- */
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+
+ @media screen and (max-width: 420px){
+
+    .header-main{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+        padding: 10px;
+    }
+    .header-buscador input{
+
+        width: 150px;
+    }
+    .header-boton-buscador button{
+
+        width: 55px;
+    }
+    .menu{
+        
+        display: flex;
+        flex-direction: column;    
+    }
+    .navbar{
+
+        margin: auto auto;
+    }
+
+}    
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 420px){
+    
+    .card-i{
+
+        border: solid red 3px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "1" 
+        "2" 
+        "3"
+        "4"
+        "5"
+        "6";
+        justify-items: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .main img{
+        margin: 2px;
+        padding: 2px;
+    }
+    .main h3{
+
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .main p{
+
+        text-align: center;
+        font-size: .6 rem;
+    } 
+
+}
+
+/* ------------------------------------------------- Mapa y Footer ---------------------------------------------------- */
+
+@media screen and (max-width: 420px){
+
+    .mppp h3{
+        font-size: 1rem;
+        font-weight: 900;
+    } 
+    .footer__sec-1 h4{
+        margin-left: 25px;
+    }
+    .footer__pie h4{
+
+        text-align: center;    
+    }
+    .footer h4{
+
+        font-size: .8rem;
+    }
+    .footer a{
+
+        font-size: .7rem;
+    }
+}
+
+
+/* ------------------------------------ Media Querie 768px ----------------------------------------------------------- */
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+
+    .header-main{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+    }
+    .navbar{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar ul{
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+
+    .card-i{
+
+        border: solid red 3px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "1 2" 
+        "3 4"
+        "5 6";
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .main img{
+        margin: 2px;
+        padding: 2px;
+    }
+    .main h3{
+
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .main p{
+
+        text-align: center;
+        font-size: .8 rem;
+    }
+    .mppp h3{
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+
+}
+
+
+
+
+/* ------------------------------------- Fin ----------------------------------------------------------------------- */
