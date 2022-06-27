@@ -25,7 +25,8 @@
 .header{
 
     
-    background-color: var(--clr-fondo);
+   /*  background-color: var(--clr-fondo); */
+   background: linear-gradient(to left, blueviolet, #4F24AB, #4F24AB, orange );
     color: var(--clr-font);
 }
 
@@ -36,18 +37,53 @@
    
 }
 
+.navbar :hover{
+    transform: scale(1.2);
+    background: linear-gradient(to right, red, orange)
+
+}
 
 .header-img img{
 
     width: 100px;
     margin: 10px;
+    animation-name: Logo;
+    animation-duration: 10s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    
 }
 
-.header-img{
+@keyframes Logo{
+    0%{
+        transform: rotateY(90deg);
+        transition-duration: .5s;
+    }    
+    25% {
+        transform: rotateY(90deg);
+        transition-duration: .5s;
+    }
 
-    display: inline-block; 
-    width: 100px;
+    
+    50% {
+        transform: rotateY(180deg);
+        transition-duration: .5s;
+    }
+
+    75% {
+        transform: rotateY(270deg);
+        transition-duration: .5s;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        transition-duration: .5s;
+
+    }
 }
+
+
+
 
 a{
     font-size: 1rem;
@@ -61,7 +97,7 @@ a{
 .header-main{
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 2fr repeat(2, 3fr) ;
 }
 
 .menu{
@@ -122,6 +158,11 @@ a{
     margin: 5px;   
 }
 
+/* ----------------------------------------------- Animaciones ------------------------------------------------------ */
+
+
+
+
 /* ------------------------------------------------ Main ------------------------------------------------------------- */
 
 .main{
@@ -149,6 +190,9 @@ a{
     align-items: center;   
 }
 
+.card-Vehículos :hover{
+    transform: scale(1.2);
+}
 .card-Vehículos h3{
 
     font-size: 2rem;
@@ -171,6 +215,10 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;    
+}
+
+.card-Tecnología :hover{
+    transform: scale(1.2);
 }
 
 .card-Tecnología h3{
@@ -197,6 +245,10 @@ a{
     align-items: center;
 }
 
+.card-Herramientas :hover{
+    transform: scale(1.2);
+}
+
 .card-Herramientas h3{
 
     font-size: 2rem;
@@ -219,6 +271,10 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card-Electrodomésticos :hover{
+    transform: scale(1.2);
 }
 
 .card-Electrodomésticos h3{
